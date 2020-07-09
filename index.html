@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Event Managment</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Latest compiled and minified CSS -->
+
+
+
+
+<!-- Popper JS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+ <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 40%;
+   background-size: cover;
+   margin: 0; padding: 0; box-sizing: border-box;
+  }
+  nav li.nav-item:hover{
+  	background-color: #00b894;
+  	color: black;
+  }
+ section .btn:hover{
+ 	background:#00b894; 
+ }
+.colorchange
+{
+  animation: colorchangex 1s infinite;
+
+
+}
+@keyframes colorchangex{
+  0%{color: red;}
+  25%{color: #bf55ec;}
+  50%{color: #00b894;}
+  100%{color: blue; }
+
+
+
+}
+.colorchanges
+{
+  animation: colorchangex 5s infinite;
+
+
+}
+@keyframes colorchangex{
+  0%{color: red;}
+  25%{color: #bf55ec;}
+  50%{color: #00b894;}
+  100%{color: blue; }
+
+
+
+}
+
+
+
+.section {
+  width: 100%;
+  height: 85vh;
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  text-align: center;color: #00b894;
+  background-color: black; 
+
+}
+.section h3 {
+  font-size: 30px; font-weight: 200;letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+.section h1{
+  margin: 30px 0 20px 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  text-transform: uppercase;
+}
+.section p{
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 1px black;
+}
+.section a{
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration-color: none;
+  letter-spacing: 4px;
+    transition: all .5s ease;
+}
+.section .btnone{
+  background-color:white;
+  color: #000;
+  margin-right:10px;
+  float: right;
+}
+.btnone:hover{
+  background-color:#00b894;
+  color: white;
+}
+.section .btntwo{
+  background-color:#00b894;
+  color: white;
+  margin-left: 100px;
+}
+.btntwo:hover{
+  background-color:white;
+  color: #000;
+}
+header{
+  width: 100%; height: 60vh;
+  background-color: black;
+  background-repeat: no-repeat;   
+  background-size: cover;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1180px){
+.section{
+  width: 100%;
+  padding: 0 2%;
+  
+} 
+}
+@media only screen and (max-width: 900px){
+  h3{font-size:150%; }
+  h1{font-size: 200%;}
+}
+
+
+@media only screen and (max-width: 750px){
+  .section h3{font-size:130%; }
+            h1{font-size: 170%;}
+
+   .sdate {
+margin-left: 50%:;
+
+   }         
+
+
+  }
+  .section a{
+
+
+    float: left;
+       display: block;
+      margin-top: 10px;
+
+  }
+
+}
+@media only screen and (max-width: 450px){
+ .section .btnone{
+    margin-right: 20px;
+
+  }
+  h3{font-size:100%; }
+  h1{font-size: 140%;}
+  .sdate {
+margin-left: 50%:;
+
+   }  
+
+}
+  </style>
+
+</head>
+<body>
+
+
+<div>
+  
+<nav class="navbar navbar-expand-md bg-info navbar-dark">
+  
+<div class="container">
+  <a href="" class="navbar-brand font-weight-bold font-w">Amaze Events</a>
+  
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar"><span class="navbar-toggler-icon"></span> </button>
+
+<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+<ul class="navbar-nav text-capitalize ml-auto text-white font-weight-bold" >
+  <li class="nav-item nav-pills">
+    
+    <a href="" class="nav-link">home</a>
+  </li>
+  <li class="nav-item">
+    
+    <a href="" class="nav-link">services</a>
+  </li>
+  <li class="nav-item">
+    
+    <a href="" class="nav-link"> toolkits</a>
+  </li>
+  <li class="nav-item">
+    
+    <a href="" class="nav-link">our desingers</a>
+  </li>
+  <li class="nav-item">
+    
+    <a href="" class="nav-link">find supplier</a>
+  </li>
+  <li class="nav-item">
+    
+    <a href="" class="nav-link">new events</a>
+  </li>
+  <li class="nav-item">
+    
+    <a href="" class="nav-link">contact us</a>
+  </li>
+
+
+</ul>
+</div>
+
+</div>
+
+
+
+</nav>
+
+
+</div>
+		
+			
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+ 
+ <div> 	
+		
+<h1 class="text-center text-success bg-info text-capitalize"> <span class="colorchange">"welcome to amaze events"</span></h1>
+</div>
+  <ul class="carousel-indicators ">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active ">
+      <img src="./neew2.jpg" alt="first">
+      
+
+    </div>
+    <div class="carousel-item ">
+      <img src="./pn.jpg" alt="second">
+    </div>
+    <div class="carousel-item ">
+      <img src="./new3.jpg" alt="third">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev" >
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span></a>
+
+</div>
+
+</section>
+
+
+<br>
+
+  <header>
+
+<section class="section text-capitalize bg-dark" style="border-radius: 10px;">
+        <h3>WELCOME TO <span class="colorchangess"> "OUR WEBSITE"</span> </h3>
+        <h1> you are looking for <span class="colorchanges">our events</span> </h1>
+        <p>"We find always better options" </p>
+
+
+        <a href="#" class="btnone mr-5 btn ">SEARCH VENUES </a>
+        <a href="#" class="btntwo mr-3 mb-1 btn">PLAN FOR EVENT</a>
+
+     
+
+      </section>
+
+
+</header>
+
+
+ </br>
+<section>
+	<div class="container-fluid">
+		<h1 class="text-center text-capitalize pt-5">about us</h1>
+		<hr class="w-25 mx-auto bg-dark">
+
+      <div class="row mb-2">
+<div class="col-lg-6 col-md-6 col-12">
+	<img src="./new 1.jpg" class="img-fluid" style="width:600px">
+</div>
+<div class="col-lg-6 col-md-6 col-12">
+	<h1 class="text-capitalize ml-6 " >"our working performance"</h1>
+	<p class="bg-light ml-4">Our profession is the only one which works unceasingly.This webpage is only for testing of my skills. This is a assingment which is giving me a oppoturnity ro got a job</p>
+	<button class="btn bg-info mr-2 ml-5 text-center text-light" style="border-radius: 5px;">CLICK FOR MORE   </button>
+</div>
+	</div>
+
+</section>
+
+<section class="text-capitalize " style="background-image:url('./an2.jpg'); background-repeat: no-repeat;background-size: cover; margin-bottom: 40px; margin-top: 30px">
+	<div class="container">
+		<h1 class="text-center text-capitalize pt-5 text-dark">our services</h1>
+		<hr class="w-25 mx-auto bg-dark"></div>
+<div class="row text-center mt-auto ">
+<div class="col-lg4 col-md-4 col-12">
+	<div class="card bg-faded" style="width: 200px; margin-left: 95px;margin-bottom: 40px" >
+  <img class="card-img-top" src="./icon3.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">dj& music</h4>
+    <p class="card-text">for party</p>
+    <a href="#" class="btn btn-primary">Manage here</a>
+ </div>
+</div>
+</div>
+
+<div class="col-lg4 col-md-4 col-12 text-capitalize">
+	<div class="card bg-dark " style="width: 200px;margin-left: 125px;margin-bottom: 40px"  >
+  <img class="card-img-top" src="./icon2.jpg" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">oragnizers</h4>
+    <p class="card-text"> Timing</p>
+    <a href="#" class="btn btn-primary">Manage here</a>
+ </div>
+</div>
+</div>
+<div class="col-lg4 col-md-4 col-12">
+	<div class="card bg-dark "style="width: 200px; margin-left: 100px;margin-bottom: 40px" >
+  <img class="card-img-top" src="./icon4.png" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">look for venues</h4>
+    <p class="card-text">His Area</p>
+    <a href="#" class="btn btn-primary">Manage here</a>
+ </div>
+</div>
+</div>
+</div>
+
+
+</section>
+<section class="bg-info mb-5" style="border-radius: 10px;">
+	<article class="py-5 text-center ">
+		<div >
+			<h3 class="display-3 text-dark ">+919936790151</h3>
+			<p class="text-dark font-weight-bold">Call For More Info</p>
+			<button class="bg-warning text-white" style="border-radius: 4px">CALL NOW</button>
+		</div>
+	</article>
+
+
+</section>
+
+<section>
+	
+<div class="container">
+		<h1 class="text-center text-capitalize pt-5 text-dark">gallery</h1>
+		<hr class="w-25 mx-auto bg-dark"></div>
+		<div class="row ml-4 mr-4">
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./1.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./cc.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./hh.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./gg.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./ff.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an7.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an6.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an5.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an4.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an3.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an2.jpg " class="img-fluid">
+			</div>
+			<div class="col-lg-4 co-md-2 col-12 mb-3">
+				<img src="./an1.jpg " class="img-fluid">
+			</div>
+		</div>
+
+
+</section>
+
+
+<section class="bg-info mb-5 mt-2 ml-2 mr-3" style="border-radius: 15px;">
+	<article class="py-5 text-center text-capitalize ">
+		<div>
+			<h3 class="display-3 ">"want to mail us"</h3>
+			<p class="text-white">our handler will get in touch with you</p>
+			<button class="bg-dark text-white text-capitalize" data-toggle="modal" data-target="#myModal" style="border-radius:7px;">prss to mail</button>
+		</div>
+		 <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">"Plese Enter Your Quary"</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Text Here
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="border-radius:7px;">Send</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+	</article>
+
+
+</section>
+<section>
+	
+<div class="media border p-3 text-capitalize bg-dark ml-5 mr-5 text-white"  style="border-radius: 15px;">
+  <div class="media-body">
+    <h4>anish gupta <small><i>Posted on july 09, 2020</i></small></h4>
+    <p>this page is devloped to only for frontend assingment</p>
+  </div>
+  <img src="./amaze.jfif" alt="Anish Gupta" class="ml-3 mt-3  rounded-circle" style="width:100px;">
+</div >
+
+
+</section>
+
+
+<section class="text-center mb-3">
+	<div class="spinner-grow text-muted"></div>
+<div class="spinner-grow text-primary"></div>
+<div class="spinner-grow text-success"></div>
+<div class="spinner-grow text-info"></div>
+<div class="spinner-grow text-warning"></div>
+<div class="spinner-grow text-danger"></div>
+<div class="spinner-grow text-secondary"></div>
+<div class="spinner-grow text-dark"></div>
+<div class="spinner-grow text-light"></div>
+</section>
+
+<footer>
+	<p class="bg-dark text-center text-white mt-4">copyright@GuRuamaze</p>
+</footer>
+
+
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+
+
+</body>
+</html>
